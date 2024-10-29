@@ -1,6 +1,6 @@
  
 with mix as (
-    SELECT *,
+    SELECT p.*, s.* except(products_id),
      quantity*purchase_price as purchase_cost
     FROM {{ ref('stg_raw__product') }} p
     JOIN {{ ref('stg_raw__sales') }} s
