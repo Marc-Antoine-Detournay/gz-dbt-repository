@@ -48,3 +48,75 @@
             description: logistic cost maybe ? 
           - name: ship_cost
             description: cost of shipping
+       - name: adwords
+         identifier: raw_gz_adwords
+         description: detail marketing campaign on adwords
+         columns:
+           - name: date_date
+             description: date
+           - name: paid_source
+             description: who was paid
+           - name: campaign_key
+             description: primary key
+           - name: camPGN_name
+             description: name of the campaign
+           - name: ads_cost
+             description: costs for an ad
+           - name: impression
+             description: nb of impressions
+           - name: click
+             description: nb of clicks
+       - name: facebook
+         identifier: raw_gz_facebook
+         description: detail marketing campaign on adwords
+         columns:
+           - name: date_date
+             description: date
+           - name: paid_source
+             description: who was paid
+           - name: campaign_key
+             description: primary key
+           - name: camPGN_name
+             description: name of the campaign
+           - name: ads_cost
+             description: costs for an ad
+           - name: impression
+             description: nb of impressions
+           - name: click
+             description: nb of clicks
+       - name: bing
+         identifier: raw_gz_bing
+         description: detail marketing campaign on adwords
+         columns:
+           - name: date_date
+             description: date
+           - name: paid_source
+             description: who was paid
+           - name: campaign_key
+             description: primary key
+           - name: camPGN_name
+             description: name of the campaign
+           - name: ads_cost
+             description: costs for an ad
+           - name: impression
+             description: nb of impressions
+           - name: click
+             description: nb of clicks
+       - name: criteo
+         identifier: raw_gz_criteo
+         description: detail marketing campaign on adwords
+         columns:
+           - name: date_date
+             description: date
+           - name: paid_source
+             description: who was paid
+           - name: campaign_key
+             description: primary key
+           - name: camPGN_name
+             description: name of the campaign
+           - name: ads_cost
+             description: costs for an ad
+           - name: impression
+             description: nb of impressions
+           - name: click
+             description: nb of clicks
