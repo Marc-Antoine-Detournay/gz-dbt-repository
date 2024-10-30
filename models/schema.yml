@@ -57,7 +57,7 @@
            - name: paid_source
              description: who was paid
            - name: campaign_key
-             description: primary key
+             description: ...
            - name: camPGN_name
              description: name of the campaign
            - name: ads_cost
@@ -66,6 +66,11 @@
              description: nb of impressions
            - name: click
              description: nb of clicks
+             tests:
+             - unique:
+                column_name: "(date_date || '-'|| campaign_key)"
+             - not_null:
+                column_name: "(date_date || '-'|| campaign_key)"
        - name: facebook
          identifier: raw_gz_facebook
          description: detail marketing campaign on adwords
@@ -75,7 +80,7 @@
            - name: paid_source
              description: who was paid
            - name: campaign_key
-             description: primary key
+             description: ...
            - name: camPGN_name
              description: name of the campaign
            - name: ads_cost
@@ -84,6 +89,11 @@
              description: nb of impressions
            - name: click
              description: nb of clicks
+             tests:
+             - unique:
+                column_name: "(date_date || '-'|| campaign_key)"
+             - not_null:
+                column_name: "(date_date || '-'|| campaign_key)"
        - name: bing
          identifier: raw_gz_bing
          description: detail marketing campaign on adwords
@@ -93,7 +103,7 @@
            - name: paid_source
              description: who was paid
            - name: campaign_key
-             description: primary key
+             description: ...
            - name: camPGN_name
              description: name of the campaign
            - name: ads_cost
@@ -102,6 +112,11 @@
              description: nb of impressions
            - name: click
              description: nb of clicks
+             tests:
+             - unique:
+                column_name: "(date_date || '-'|| campaign_key)"
+             - not_null:
+                column_name: "(date_date || '-'|| campaign_key)"
        - name: criteo
          identifier: raw_gz_criteo
          description: detail marketing campaign on adwords
@@ -111,7 +126,7 @@
            - name: paid_source
              description: who was paid
            - name: campaign_key
-             description: primary key
+             description: ...
            - name: camPGN_name
              description: name of the campaign
            - name: ads_cost
@@ -120,3 +135,43 @@
              description: nb of impressions
            - name: click
              description: nb of clicks
+             tests:
+             - unique:
+                column_name: "(date_date || '-'|| campaign_key)"
+             - not_null:
+                column_name: "(date_date || '-'|| campaign_key)"
+       - name: finance_cmp_d
+         identifier: finance_campaign_days
+         description: ...
+         columns:
+           - name: date_date
+             description: date
+             tests:
+             - unique
+             - not_null
+           - name: ads_margin
+             description: ...
+           - name: average_basket
+             description: ...
+           - name: operational_margin 
+             description: ...
+           - name: ads_cost 
+             description: ...
+           - name: ads_impressions
+             description: ...
+           - name: ads_click
+             description: ...
+           - name: quantity
+             description: ...
+           - name: revenue
+             description: ...
+           - name: purchase_cost
+             description: ...
+           - name:  margin
+             description: ...
+           - name: shipping_fee 
+             description: ...
+           - name: logcost
+             description: ...
+           - name: ship_cost
+             description: ...
